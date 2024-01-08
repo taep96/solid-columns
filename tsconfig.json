@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

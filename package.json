@@ -1,0 +1,60 @@
+{
+  "name": "@taep96/solid-columns",
+  "version": "0.0.0",
+  "description": "Create column layouts with SolidJS",
+  "keywords": [
+    "solid",
+    "solidjs",
+    "solid-js",
+    "column",
+    "columns",
+    "layout",
+    "grid",
+    "responsive",
+    "breakpoint",
+    "breakpoints",
+    "media",
+    "query"
+  ],
+  "license": "MIT",
+  "repository": "github:taep96/solid-columns",
+  "homepage": "https://taep96.moe/projects/solid-columns",
+  "author": "taep96 <taep96@cock.li> (https://taep96.moe/)",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.tsx",
+  "exports": {
+    ".": {
+      "types": "./dist/index.tsx",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bun bun.build.ts",
+    "lint": "tsc && eslint . --cache --cache-location node_modules/.cache/eslint",
+    "format": "prettier . --check --cache --write",
+    "ci": "bun lint && bun run build",
+    "publish": "bun ci && changeset publish"
+  },
+  "dependencies": {
+    "@solid-primitives/media": "^2.2.5",
+    "solid-js": "^1.8.8"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/bun": "^1.0.0",
+    "@types/web": "^0.0.134",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "bun-plugin-dts": "^0.2.1",
+    "bun-plugin-solid": "^1.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-solid": "^0.13.1",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
