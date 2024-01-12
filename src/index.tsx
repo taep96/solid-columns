@@ -25,7 +25,7 @@ export const Columns: ParentComponent<ColumnsProps> = (_props) => {
     );
 
   return (
-    <div ref={console.log} {...props}>
+    <div {...props}>
       <For each={createColumns()}>{(column) => <div>{column}</div>}</For>
     </div>
   );
